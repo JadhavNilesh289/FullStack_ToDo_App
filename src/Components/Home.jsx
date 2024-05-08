@@ -5,7 +5,10 @@ function Home() {
         style={{
           border: "1px solid black",
           borderRadius: "20px",
-          padding: "4%",
+          paddingTop: "2%",
+          paddingLeft: "4%",
+          paddingRight: "4%",
+          paddingBottom: "4%",
           margin: "2%",
           width: "80%",
           backgroundColor: "whitesmoke",
