@@ -2,8 +2,10 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <div className="bg-black">
-        <footer className="bg-slate-600">This is footer || Todo List</footer>
+      <div className="grid  mt-5">
+        <footer className="mt-auto bg-gray-800 text-white text-center p-4">
+          This is footer || Todo List
+        </footer>
       </div>
     </>
   );
