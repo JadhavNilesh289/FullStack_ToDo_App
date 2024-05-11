@@ -1,28 +1,50 @@
 import React from "react";
+<<<<<<< HEAD
 
+=======
+import { useNavigate } from "react-router-dom";
+>>>>>>> 6093c4165138210a0831023bd865142cb5bc48ab
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  //Ananomymous function-1
+  const goHome = () => {
+    navigate("/");
+  };
+
+  //Ananomymous function - 2
+  const gotoAbout = () => {
+    navigate("/about");
+  };
+
+  //Ananomymous function - 3
+  const gotoAddTodo = () => {
+    navigate("/addtodo");
+  };
+
+  // ----- MAIN FUNCTION RETURN -----
   return (
     <>
-      <div>
-        <navbar>
+      <nav className="flex p-2 fixed bg-stone-500 m">
+        <div>
           <div>
-            <div>
-              <img src="/" alt="logo" />
-            </div>
-            <div>
-              <p>MyToDo</p>
-            </div>
+            <img src="/" alt="logo" onClick={goHome} />{" "}
+            {/* Empty src attribute */}
           </div>
+
           <div>
-            <ul>
-              <li>Our Team</li>
-              <li>About MyToDo</li>
-              <li>Contact</li>
-            </ul>
+            <p onClick={goHome}>MyToDo</p>
           </div>
-        </navbar>
-      </div>
+        </div>
+
+        <div className="font-bold  ">
+          <ul className="flex gap-3">
+            <li onClick={gotoAbout}>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </nav>
     </>
   );
 }
