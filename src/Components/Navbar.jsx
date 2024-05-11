@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-
-=======
 import { useNavigate } from "react-router-dom";
->>>>>>> 6093c4165138210a0831023bd865142cb5bc48ab
 
 function Navbar() {
   const navigate = useNavigate();
