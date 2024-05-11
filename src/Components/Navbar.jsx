@@ -22,25 +22,22 @@ function Navbar() {
   // ----- MAIN FUNCTION RETURN -----
   return (
     <>
-      <nav>
+      <nav className="flex p-2 fixed bg-stone-500 m">
         <div>
           <div>
             <img src="/" alt="logo" onClick={goHome} />{" "}
             {/* Empty src attribute */}
           </div>
+
           <div>
             <p onClick={goHome}>MyToDo</p>
           </div>
         </div>
-        <div>
-          <ul>
-            <li>Our Team</li>
 
-            <li onClick={gotoAbout}>About MyToDo</li>
-
+        <div className="font-bold  ">
+          <ul className="flex gap-3">
+            <li onClick={gotoAbout}>About</li>
             <li>Contact</li>
-
-            <li onClick={gotoAddTodo}>Add Todo</li>
           </ul>
         </div>
       </nav>
