@@ -10,20 +10,7 @@ function AddToDo() {
   };
 
   return (
-    <div
-      style={{
-        backgroundColor: "wheat",
-        border: "1px solid black",
-        borderRadius: "20px",
-        paddingTop: "2%",
-        paddingLeft: "4%",
-        paddingRight: "4%",
-        paddingBottom: "4%",
-        margin: "2%",
-        width: "70%",
-        boxShadow: "7px 7px",
-      }}
-    >
+    <div>
       <h2>Enter ToDo Details</h2>
       <table>
         <tr>
