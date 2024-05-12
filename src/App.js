@@ -15,15 +15,20 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Sidebar />
-        <Routes>
 
-          <Route exact path="/" element={<Home />} />
-          <Route path="/home" element={<Errorpage />} />
-          <Route path="/addtodo" element={<AddTodo />} />
-          <Route path="/about" element={<About />} />
-          <Route path='/alltodo' element={<Alltodo />} />
-        </Routes>
+        <div className='flex  border-black gap-5 m-5'>
+          <Sidebar />
+          <div className='p-2'>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/home" element={<Errorpage />} />
+              <Route path="/addtodo" element={<AddTodo />} />
+              <Route path="/about" element={<About />} />
+              <Route path='/alltodo' element={<Alltodo />} />
+            </Routes>
+          </div>
+        </div>
+
         <Footer />
       </Router>
 
