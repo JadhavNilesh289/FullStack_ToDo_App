@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Sidebar() {
   return (
     <>
-      <div className="bg-indigo-50 p-10 max-w-max h-2/5 flex-wrap rounded-r-xl text-yellow-800 fixed">
+      <div className="bg-indigo-50 p-10 max-w-max h-2/5 flex-wrap rounded-r-xl text-yellow-800 fixed mt-[30vh]">
         <div className="">
           <NavLink to={"./Alltodo"}>All To do</NavLink>
           <br />
