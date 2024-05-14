@@ -46,8 +46,7 @@ function AddToDo() {
           </tr>
         </table>
       </div>
-    </div>
-  );
+    </div>
+  );
 }
-
 export default AddToDo;

@@ -12,7 +12,7 @@ import Sidebar from './Components/Sidebar';
 
 function App() {
   return (
-    <>
+      <>
       <Router>
         <Navbar />
 
@@ -30,9 +30,7 @@ function App() {
         </div>
 
         <Footer />
-      </Router>
-
-
+      </Router>
     </>
   );
 }
