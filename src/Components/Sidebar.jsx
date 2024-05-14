@@ -20,8 +20,8 @@ function Sidebar() {
             Add todo
           </NavLink>
         </div>
-      </div>
-    </>
+      </div>
+    </>
   );
 }
 

@@ -3,10 +3,23 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
-	function Navbar() {
-  
-  
-    // ----- MAIN FUNCTION RETURN -----
+
+  //Ananomymous function-1
+  const goHome = () => {
+    navigate("/");
+  };
+
+  //Ananomymous function - 2
+  const gotoAbout = () => {
+    navigate("/about");
+  };
+
+  //Ananomymous function - 3
+  const gotoAddTodo = () => {
+    navigate("/addtodo");
+  };
+
+  // ----- MAIN FUNCTION RETURN -----
   return (
     <>
       <div className="flex p-4 bg-orange-300">
@@ -42,7 +55,8 @@ function Navbar() {
           </div>
         </nav>
       </div>
-    </>
-  );
+    </>
+  );
 }
-}
+
+export default Navbar;
