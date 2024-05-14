@@ -12,7 +12,6 @@ import Sidebar from './Components/Sidebar';
 
 function App() {
   return (
-    <>
       <>
       <Router>
         <Navbar />
