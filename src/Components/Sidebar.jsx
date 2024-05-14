@@ -4,14 +4,24 @@ import { NavLink } from "react-router-dom";
 function Sidebar() {
   return (
     <>
-      <div className="bg-indigo-50 p-10 max-w-max h-2/5 flex-wrap rounded-r-xl text-yellow-800 fixed mt-[30vh]">
-        <div className="">
-          <NavLink to={"./Alltodo"}>All To do</NavLink>
-          <br />
-          <NavLink to={"./addtodo"}>Add todo</NavLink>
+      <div className=" text-wrap text-xl">
+        <div className="flex flex-col p-1 gap-y-2">
+          <NavLink
+            to={"./alltodo"}
+            className="hover:text-orange-50 hover:bg-orange-400 p-2 hover:rounded-lg"
+          >
+            All To do
+          </NavLink>
+          <hr />
+          <NavLink
+            to={"./addtodo"}
+            className="hover:text-orange-50 hover:bg-orange-400 p-2 hover:rounded-lg"
+          >
+            Add todo
+          </NavLink>
         </div>
-      </div>
-    </>
+      </div>
+    </>
   );
 }
 
